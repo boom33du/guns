@@ -1,0 +1,105 @@
+@layout("/common/_container.html",{bg:"bg-white",js:["/assets/modular/busi/postPaymentRecored/postPaymentRecored_add.js"]}){
+<form id="postPaymentRecoredForm" lay-filter="postPaymentRecoredForm" class="layui-form model-form">
+    <input name="id" type="hidden"/>
+    <div class="layui-form-item">
+        <label class="layui-form-label">客户地址id，外键<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="addressOfCustomerId" name="addressOfCustomerId" placeholder="请输入客户地址id，外键" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">月结明细表id，外键<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="monthlyStatementDetailId" name="monthlyStatementDetailId" placeholder="请输入月结明细表id，外键" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">给水号（不可修改）<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="wmWaterSupplyNumber" name="wmWaterSupplyNumber" placeholder="请输入给水号（不可修改）" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">当前价格<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="price" name="price" placeholder="请输入当前价格" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">本周期用水量<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="waterconsume" name="waterconsume" placeholder="请输入本周期用水量" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">发生金额，根据月结生成<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="TOTALconsume" name="TOTALconsume" placeholder="请输入发生金额，根据月结生成" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">费用开始时间<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="begintime" name="begintime" placeholder="请输入费用开始时间" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">费用结束时间<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="endtime" name="endtime" placeholder="请输入费用结束时间" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">费用开始水表读数<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="watermeterbeginrecord" name="watermeterbeginrecord" placeholder="请输入费用开始水表读数" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">费用结束水表读数<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="watermeterendrecord" name="watermeterendrecord" placeholder="请输入费用结束水表读数" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">缴费时间<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="payTime" name="payTime" placeholder="请输入缴费时间" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">缴费渠道（0微信、1支付宝、2银行卡、3前台）<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="PaymentChannel" name="PaymentChannel" placeholder="请输入缴费渠道（0微信、1支付宝、2银行卡、3前台）" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">交易明细id，交费明细表主键，外键<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="paymentDetailId" name="paymentDetailId" placeholder="请输入交易明细id，交费明细表主键，外键" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">是否完成 0未完成 1完成，默认0<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="isfinish" name="isfinish" placeholder="请输入是否完成 0未完成 1完成，默认0" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">操作人，用户表主键，外键<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="operid" name="operid" placeholder="请输入操作人，用户表主键，外键" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">操作时间<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="opertime" name="opertime" placeholder="请输入操作时间" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item text-right">
+        <button class="layui-btn layui-btn-primary" type="button" ew-event="closeDialog">取消</button>
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>保存</button>
+    </div>
+</form>
+@}

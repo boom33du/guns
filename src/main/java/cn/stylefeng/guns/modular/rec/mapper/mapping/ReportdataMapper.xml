@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.modular.rec.mapper.ReportdataMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.modular.rec.entity.Reportdata">
+        <id column="ID" property="id" />
+        <result column="DEVICEID" property="deviceid" />
+        <result column="MANUID" property="manuid" />
+        <result column="SERIALNUM" property="serialnum" />
+        <result column="ACCUMUFLOWDAILY" property="accumuflowdaily" />
+        <result column="BATTERYLEVEL" property="batterylevel" />
+        <result column="TIMEU" property="timeu" />
+        <result column="TIMED" property="timed" />
+        <result column="CHECKSUM" property="checksum" />
+        <result column="RECEIVETIME" property="receivetime" />
+        <result column="EVENTTIME" property="eventtime" />
+        <result column="TEMP" property="temp" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID AS "id", DEVICEID AS "deviceid", MANUID AS "manuid", SERIALNUM AS "serialnum", ACCUMUFLOWDAILY AS "accumuflowdaily", BATTERYLEVEL AS "batterylevel", TIMEU AS "timeu", TIMED AS "timed", CHECKSUM AS "checksum", RECEIVETIME AS "receivetime", EVENTTIME AS "eventtime", TEMP AS "temp"
+    </sql>
+
+</mapper>

@@ -1,0 +1,75 @@
+@layout("/common/_container.html",{bg:"bg-white",js:["/assets/modular/rec/reportdata/reportdata_edit.js"]}){
+<form id="reportdataForm" lay-filter="reportdataForm" class="layui-form model-form">
+    <input name="id" type="hidden"/>
+    <div class="layui-form-item">
+        <label class="layui-form-label">设备ID，电信云平台的标志号<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="deviceid" name="deviceid" placeholder="请输入设备ID，电信云平台的标志号" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">厂商ID<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="manuid" name="manuid" placeholder="请输入厂商ID" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">水表号<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="serialnum" name="serialnum" placeholder="请输入水表号" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">用水总量<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="accumuflowdaily" name="accumuflowdaily" placeholder="请输入用水总量" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">剩余电量<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="batterylevel" name="batterylevel" placeholder="请输入剩余电量" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">发送时间上半部分<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="timeu" name="timeu" placeholder="请输入发送时间上半部分" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">发送时间下半部分<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="timed" name="timed" placeholder="请输入发送时间下半部分" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">校验码<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="checksum" name="checksum" placeholder="请输入校验码" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">应用系统接收时间<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="receivetime" name="receivetime" placeholder="请输入应用系统接收时间" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">事件时间，来自电信云<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="eventtime" name="eventtime" placeholder="请输入事件时间，来自电信云" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">备注<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="temp" name="temp" placeholder="请输入备注" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item text-right">
+        <button class="layui-btn layui-btn-primary" type="button" ew-event="closeDialog">取消</button>
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>保存</button>
+    </div>
+</form>
+@}

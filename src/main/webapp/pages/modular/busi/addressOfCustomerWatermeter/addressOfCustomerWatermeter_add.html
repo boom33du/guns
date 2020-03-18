@@ -1,0 +1,45 @@
+@layout("/common/_container.html",{bg:"bg-white",js:["/assets/modular/busi/addressOfCustomerWatermeter/addressOfCustomerWatermeter_add.js"]}){
+<form id="addressOfCustomerWatermeterForm" lay-filter="addressOfCustomerWatermeterForm" class="layui-form model-form">
+    <input name="watermeterinfoId" type="hidden"/>
+    <div class="layui-form-item">
+        <label class="layui-form-label">所属客户主键，外键<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="customerinfoId" name="customerinfoId" placeholder="请输入所属客户主键，外键" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">客户地址主键，外键<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="addressOfCustomerId" name="addressOfCustomerId" placeholder="请输入客户地址主键，外键" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">状态：1有效 0失效<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="status" name="status" placeholder="请输入状态：1有效 0失效" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">绑定时间<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="begintime" name="begintime" placeholder="请输入绑定时间" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">失效时间<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="endtime" name="endtime" placeholder="请输入失效时间" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">操作历史记录<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="temp" name="temp" placeholder="请输入操作历史记录" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item text-right">
+        <button class="layui-btn layui-btn-primary" type="button" ew-event="closeDialog">取消</button>
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>保存</button>
+    </div>
+</form>
+@}

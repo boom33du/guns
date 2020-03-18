@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.modular.busi.mapper.AddressOfCustomerWatermeterMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.modular.busi.entity.AddressOfCustomerWatermeter">
+        <id column="WATERMETERINFO_ID" property="watermeterinfoId" />
+        <result column="CUSTOMERINFO_ID" property="customerinfoId" />
+        <result column="address_of_customer_id" property="addressOfCustomerId" />
+        <result column="STATUS" property="status" />
+        <result column="BEGINTIME" property="begintime" />
+        <result column="ENDTIME" property="endtime" />
+        <result column="TEMP" property="temp" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        CUSTOMERINFO_ID AS "customerinfoId", address_of_customer_id AS "addressOfCustomerId", WATERMETERINFO_ID AS "watermeterinfoId", STATUS AS "status", BEGINTIME AS "begintime", ENDTIME AS "endtime", TEMP AS "temp"
+    </sql>
+
+</mapper>

@@ -1,0 +1,32 @@
+@layout("/common/_container.html",{bg:"bg-white",js:["/assets/modular/busi/customerWatermeter/customerWatermeter_edit.js"]}){
+<form id="customerWatermeterForm" lay-filter="customerWatermeterForm" class="layui-form model-form">
+    <div class="layui-form-item">
+        <label class="layui-form-label">水表选择<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <select id="watermeterinfoId" name="watermeterinfoId" lay-verify = "required" required>
+                <option value=""></option>
+                @for(item in watermeters!){
+                <option value="${item.id}">${item.deviceid}</option>
+                @}
+            </select>
+            <!--            <input id="watermeterinfoId" name="watermeterinfoId" placeholder="请输入水表编号" type="text" class="layui-input" lay-verify="required" required/>-->
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">客户选择<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <select id="customerinfoId" name="customerinfoId" lay-verify="required" required>
+                <option value=""></option>
+                @for(item in customers!){
+                <option value="${item.id}">${item.customername}</option>
+                @}
+            </select>
+            <!--            <input id="customerinfoId" name="customerinfoId" placeholder="请输入客户编号" type="text" class="layui-input" lay-verify="required" required/>-->
+        </div>
+    </div>
+    <div class="layui-form-item text-right">
+        <button class="layui-btn layui-btn-primary" type="button" ew-event="closeDialog">取消</button>
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>保存</button>
+    </div>
+</form>
+@}

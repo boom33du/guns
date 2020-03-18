@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.modular.busi.mapper.CustomerWatermeterMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.modular.busi.entity.CustomerWatermeter">
+        <id column="WATERMETERINFO_ID" property="watermeterinfoId" />
+        <result column="CUSTOMERINFO_ID" property="customerinfoId" />
+        <result column="DEVICEID" property="waterMeterDeviceId"/>
+        <result column="CUSTOMERINFONAME" property="customerinfoName"/>
+
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        CUSTOMERINFO_ID AS "customerinfoId", WATERMETERINFO_ID AS "watermeterinfoId"
+    </sql>
+    <select id="selectCustomerWaterMeter" resultType="map">
+        select
+        bcw.WATERMETERINFO_ID AS "watermeterinfoId",bcw.CUSTOMERINFO_ID AS "customerinfoId",
+        ww.DEVICEID AS "waterMeterDeviceId",bc.CUSTOMERNAME AS "customerinfoName"
+
+        from wtmm_watermeterinfo ww,busi_customer_watermeter bcw,busi_customerinfo bc
+        where bc.ID = bcw.CUSTOMERINFO_ID
+        and ww.ID = bcw.WATERMETERINFO_ID
+        <if test="condition != null and condition != ''">
+            and (
+            bcw.CUSTOMERINFO_ID like CONCAT('%',#{condition},'%')
+            or
+            ww.DEVICEID like CONCAT('%',#{condition},'%')
+            or
+            bc.CUSTOMERNAME like CONCAT('%',#{condition},'%')
+            )
+        </if>
+        order by bcw.WATERMETERINFO_ID asc
+    </select>
+
+</mapper>

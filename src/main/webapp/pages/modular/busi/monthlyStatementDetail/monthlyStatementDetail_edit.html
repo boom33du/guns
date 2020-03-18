@@ -1,0 +1,81 @@
+@layout("/common/_container.html",{bg:"bg-white",js:["/assets/modular/busi/monthlyStatementDetail/monthlyStatementDetail_edit.js"]}){
+<form id="monthlyStatementDetailForm" lay-filter="monthlyStatementDetailForm" class="layui-form model-form">
+    <input name="id" type="hidden"/>
+    <div class="layui-form-item">
+        <label class="layui-form-label">月结记录表主键，外键<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="recordId" name="recordId" placeholder="请输入月结记录表主键，外键" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">客户地址id，外键<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="addressOfCustomerId" name="addressOfCustomerId" placeholder="请输入客户地址id，外键" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">水表ID（包含生产商等信息）<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="wmId" name="wmId" placeholder="请输入水表ID（包含生产商等信息）" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">地址类型主键，外键<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="addressTypeId" name="addressTypeId" placeholder="请输入地址类型主键，外键" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">年份<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="year" name="year" placeholder="请输入年份" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">月份<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="month" name="month" placeholder="请输入月份" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">上次月结ID，本表主键<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="LASTRECORDid" name="LASTRECORDid" placeholder="请输入上次月结ID，本表主键" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">月结时间<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="recordtime" name="recordtime" placeholder="请输入月结时间" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">当前水表读数<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="curresult" name="curresult" placeholder="请输入当前水表读数" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">当前用水总量默认0<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="totalWaterL" name="totalWaterL" placeholder="请输入当前用水总量默认0" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">本周期用水量<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="waterconsume" name="waterconsume" placeholder="请输入本周期用水量" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">月结记录，记录异常情况<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="detail" name="detail" placeholder="请输入月结记录，记录异常情况" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item text-right">
+        <button class="layui-btn layui-btn-primary" type="button" ew-event="closeDialog">取消</button>
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>保存</button>
+    </div>
+</form>
+@}

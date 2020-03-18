@@ -1,0 +1,105 @@
+@layout("/common/_container.html",{bg:"bg-white",js:["/assets/modular/wtmm/watermeterinfo/watermeterinfo_edit.js"]}){
+<form id="watermeterinfoForm" lay-filter="watermeterinfoForm" class="layui-form model-form">
+    <input name="id" type="hidden"/>
+    <div class="layui-form-item">
+        <label class="layui-form-label">设备ID<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="deviceid" name="deviceid" placeholder="请输入设备ID，电信云平台的标志号" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">水表类型<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="watermetertypeId" name="watermetertypeId" placeholder="请输入水表类型主键，外键" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">网关ID<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="gatewayid" name="gatewayid" placeholder="请输入网关ID" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">事件时间<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="eventtime" name="eventtime" placeholder="请输入事件时间，来自电信云" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">厂商ID<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="manuid" name="manuid" placeholder="请输入厂商ID" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">水表号<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="serialnum" name="serialnum" placeholder="请输入水表号" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">用水总量<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="accumuflowdaily" name="accumuflowdaily" placeholder="请输入用水总量，小数点后8位" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">更新时间<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="updatetime" name="updatetime" placeholder="请输入更新时间" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">固件版本号<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="firewareVersion" name="firewareVersion" placeholder="请输入固件版本号" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">状态<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="status" name="status" placeholder="请输入状态 0新添加，未激活 1激活，未绑定 2激活，绑定了 3删除了；4损坏；5欠费" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">剩余电量<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="electricquantityLeft" name="electricquantityLeft" placeholder="请输入剩余电量" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">生产日期<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="dateManufacture" name="dateManufacture" placeholder="请输入生产日期" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">NB-IOT芯片ID<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="nbiotId" name="nbiotId" placeholder="请输入NB-IOT芯片ID" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">安装日期<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="dateInstall" name="dateInstall" placeholder="请输入安装日期" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">停用日期<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="dateDiscontinuation" name="dateDiscontinuation" placeholder="请输入停用日期" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">备注（水表用户ID）<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="temp" name="temp" placeholder="请输入备注（水表用户ID）" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item text-right">
+        <button class="layui-btn layui-btn-primary" type="button" ew-event="closeDialog">取消</button>
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>保存</button>
+    </div>
+</form>
+@}

@@ -1,0 +1,45 @@
+@layout("/common/_container.html",{bg:"bg-white",js:["/assets/modular/msg/msg_edit.js"]}){
+<form id="msgForm" lay-filter="msgForm" class="layui-form model-form">
+    <input name="id" type="hidden"/>
+    <div class="layui-form-item">
+        <label class="layui-form-label">名字<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="name" name="name" placeholder="请输入名字" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">值<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="value" name="value" placeholder="请输入值" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">长度<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="length" name="length" placeholder="请输入长度" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">半径<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="radius" name="radius" placeholder="请输入半径" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">标志<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="flag" name="flag" placeholder="请输入标志" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">备注<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="temp" name="temp" placeholder="请输入备注" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item text-right">
+        <button class="layui-btn layui-btn-primary" type="button" ew-event="closeDialog">取消</button>
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>保存</button>
+    </div>
+</form>
+@}

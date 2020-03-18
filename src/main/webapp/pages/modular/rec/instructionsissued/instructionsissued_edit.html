@@ -1,0 +1,57 @@
+@layout("/common/_container.html",{bg:"bg-white",js:["/assets/modular/rec/instructionsissued/instructionsissued_edit.js"]}){
+<form id="instructionsissuedForm" lay-filter="instructionsissuedForm" class="layui-form model-form">
+    <input name="id" type="hidden"/>
+    <div class="layui-form-item">
+        <label class="layui-form-label">要下发到的水表id<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="waterMeterId" name="waterMeterId" placeholder="请输入要下发到的水表id" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">指令类型 1、纯指令 2、升级包<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="instructionType" name="instructionType" placeholder="请输入指令类型 1、纯指令 2、升级包" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">下发指令内容<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="instructionContent" name="instructionContent" placeholder="请输入下发指令内容" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">发送者<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="sender" name="sender" placeholder="请输入发送者" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">发送时间<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="SendTime" name="SendTime" placeholder="请输入发送时间" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">硬件返回的执行结果<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="resultsOfExecution" name="resultsOfExecution" placeholder="请输入硬件返回的执行结果" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">执行完成时间<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="endTime" name="endTime" placeholder="请输入执行完成时间" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">是否执行结束 0、失败 1、成功结束<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="isFinished" name="isFinished" placeholder="请输入是否执行结束 0、失败 1、成功结束" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item text-right">
+        <button class="layui-btn layui-btn-primary" type="button" ew-event="closeDialog">取消</button>
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>保存</button>
+    </div>
+</form>
+@}

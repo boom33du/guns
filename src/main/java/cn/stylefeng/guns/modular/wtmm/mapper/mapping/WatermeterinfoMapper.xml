@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.modular.wtmm.mapper.WatermeterinfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.modular.wtmm.entity.Watermeterinfo">
+        <id column="ID" property="id" />
+        <result column="DEVICEID" property="deviceid" />
+        <result column="WATERMETERTYPE_ID" property="watermetertypeId" />
+        <result column="GATEWAYID" property="gatewayid" />
+        <result column="EVENTTIME" property="eventtime" />
+        <result column="MANUID" property="manuid" />
+        <result column="SERIALNUM" property="serialnum" />
+        <result column="ACCUMUFLOWDAILY" property="accumuflowdaily" />
+        <result column="UPDATETIME" property="updatetime" />
+        <result column="FIREWARE_VERSION" property="firewareVersion" />
+        <result column="STATUS" property="status" />
+        <result column="ELECTRICQUANTITY_LEFT" property="electricquantityLeft" />
+        <result column="DATE_MANUFACTURE" property="dateManufacture" />
+        <result column="NBIOT_ID" property="nbiotId" />
+        <result column="DATE_INSTALL" property="dateInstall" />
+        <result column="DATE_DISCONTINUATION" property="dateDiscontinuation" />
+        <result column="TEMP" property="temp" />
+        <result column="watermeterTypeName" property="watermeterTypeName" />
+
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID AS "id", DEVICEID AS "deviceid", WATERMETERTYPE_ID AS "watermetertypeId", GATEWAYID AS "gatewayid", EVENTTIME AS "eventtime", MANUID AS "manuid", SERIALNUM AS "serialnum", ACCUMUFLOWDAILY AS "accumuflowdaily", UPDATETIME AS "updatetime", FIREWARE_VERSION AS "firewareVersion", STATUS AS "status", ELECTRICQUANTITY_LEFT AS "electricquantityLeft", DATE_MANUFACTURE AS "dateManufacture", NBIOT_ID AS "nbiotId", DATE_INSTALL AS "dateInstall", DATE_DISCONTINUATION AS "dateDiscontinuation", TEMP AS "temp"
+    </sql>
+    <select id="selectWatermeters" resultType="map">
+        SELECT
+        wi.ID AS "id", DEVICEID AS "deviceid", WATERMETERTYPE_ID AS "watermetertypeId", GATEWAYID AS "gatewayid",
+        EVENTTIME AS "eventtime", MANUID AS "manuid", SERIALNUM AS "serialnum", ACCUMUFLOWDAILY AS "accumuflowdaily",
+        UPDATETIME AS "updatetime", FIREWARE_VERSION AS "firewareVersion", STATUS AS "status",
+        ELECTRICQUANTITY_LEFT AS "electricquantityLeft", DATE_MANUFACTURE AS "dateManufacture",
+        NBIOT_ID AS "nbiotId", DATE_INSTALL AS "dateInstall", DATE_DISCONTINUATION AS "dateDiscontinuation", TEMP AS "temp",
+        tyofwi.WATERMETER_TYPE as "watermeterTypeName"
+        FROM wtmm_watermeterinfo wi,wtmm_type_of_watermeter tyofwi
+        where wi.WATERMETERTYPE_ID = tyofwi.ID
+        <if test="condition != null and condition != ''">
+        AND
+        (
+        DEVICEID LIKE CONCAT('%',#{condition},'%')
+        OR
+        tyofwi.WATERMETER_TYPE like CONCAT('%',#{condition},'%')
+        or
+        MANUID like CONCAT('%',#{condition},'%')
+        )
+        </if>
+        ORDER BY wi.ID asc
+    </select>
+</mapper>

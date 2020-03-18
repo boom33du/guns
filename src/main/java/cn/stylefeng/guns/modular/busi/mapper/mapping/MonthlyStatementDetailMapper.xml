@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.modular.busi.mapper.MonthlyStatementDetailMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.modular.busi.entity.MonthlyStatementDetail">
+        <id column="ID" property="id" />
+        <result column="record_id" property="recordId" />
+        <result column="address_of_customer_id" property="addressOfCustomerId" />
+        <result column="WM_ID" property="wmId" />
+        <result column="address_TYPE_id" property="addressTypeId" />
+        <result column="YEAR" property="year" />
+        <result column="MONTH" property="month" />
+        <result column="LASTRECORDid" property="LASTRECORDid" />
+        <result column="RECORDTIME" property="recordtime" />
+        <result column="CURRESULT" property="curresult" />
+        <result column="TOTAL_WATER_L" property="totalWaterL" />
+        <result column="WATERCONSUME" property="waterconsume" />
+        <result column="DETAIL" property="detail" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID AS "id", record_id AS "recordId", address_of_customer_id AS "addressOfCustomerId", WM_ID AS "wmId", address_TYPE_id AS "addressTypeId", YEAR AS "year", MONTH AS "month", LASTRECORDid AS "LASTRECORDid", RECORDTIME AS "recordtime", CURRESULT AS "curresult", TOTAL_WATER_L AS "totalWaterL", WATERCONSUME AS "waterconsume", DETAIL AS "detail"
+    </sql>
+
+</mapper>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.modular.busi.mapper.PostPaymentRecoredMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.modular.busi.entity.PostPaymentRecored">
+        <id column="ID" property="id" />
+        <result column="address_of_customer_id" property="addressOfCustomerId" />
+        <result column="monthly_statement_detail_id" property="monthlyStatementDetailId" />
+        <result column="WM_WATER_SUPPLY_NUMBER" property="wmWaterSupplyNumber" />
+        <result column="PRICE" property="price" />
+        <result column="WATERCONSUME" property="waterconsume" />
+        <result column="TOTALconsume" property="TOTALconsume" />
+        <result column="BEGINTIME" property="begintime" />
+        <result column="ENDTIME" property="endtime" />
+        <result column="watermeterbeginrecord" property="watermeterbeginrecord" />
+        <result column="watermeterendrecord" property="watermeterendrecord" />
+        <result column="payTime" property="payTime" />
+        <result column="PaymentChannel" property="PaymentChannel" />
+        <result column="payment_Detail_Id" property="paymentDetailId" />
+        <result column="isfinish" property="isfinish" />
+        <result column="OPERID" property="operid" />
+        <result column="opertime" property="opertime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID AS "id", address_of_customer_id AS "addressOfCustomerId", monthly_statement_detail_id AS "monthlyStatementDetailId", WM_WATER_SUPPLY_NUMBER AS "wmWaterSupplyNumber", PRICE AS "price", WATERCONSUME AS "waterconsume", TOTALconsume AS "TOTALconsume", BEGINTIME AS "begintime", ENDTIME AS "endtime", watermeterbeginrecord AS "watermeterbeginrecord", watermeterendrecord AS "watermeterendrecord", payTime AS "payTime", PaymentChannel AS "PaymentChannel", payment_Detail_Id AS "paymentDetailId", isfinish AS "isfinish", OPERID AS "operid", opertime AS "opertime"
+    </sql>
+
+</mapper>

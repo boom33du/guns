@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.modular.wtmm.mapper.TypeOfWatermeterMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.modular.wtmm.entity.TypeOfWatermeter">
+        <id column="ID" property="id" />
+        <result column="WATERMETER_TYPE" property="watermeterType" />
+        <result column="CALIBER" property="caliber" />
+        <result column="ISHAVEVALVE" property="ishavevalve" />
+        <result column="ISNBIOT" property="isnbiot" />
+        <result column="PROTOCOL" property="protocol" />
+        <result column="MANUFACTURERCODE" property="manufacturercode" />
+        <result column="MANUFACTURER" property="manufacturer" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID AS "id", WATERMETER_TYPE AS "watermeterType", CALIBER AS "caliber", ISHAVEVALVE AS "ishavevalve", ISNBIOT AS "isnbiot", PROTOCOL AS "protocol", MANUFACTURERCODE AS "manufacturercode", MANUFACTURER AS "manufacturer"
+    </sql>
+
+</mapper>

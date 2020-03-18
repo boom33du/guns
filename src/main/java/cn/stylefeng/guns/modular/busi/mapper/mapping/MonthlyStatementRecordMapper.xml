@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.modular.busi.mapper.MonthlyStatementRecordMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.modular.busi.entity.MonthlyStatementRecord">
+        <id column="ID" property="id" />
+        <result column="YEAR" property="year" />
+        <result column="MONTH" property="month" />
+        <result column="RECORDTIME" property="recordtime" />
+        <result column="OPERID" property="operid" />
+        <result column="BEGINTIME" property="begintime" />
+        <result column="ENDTIME" property="endtime" />
+        <result column="ALLCOUNT" property="allcount" />
+        <result column="SUCCOUNT" property="succount" />
+        <result column="DETAIL" property="detail" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID AS "id", YEAR AS "year", MONTH AS "month", RECORDTIME AS "recordtime", OPERID AS "operid", BEGINTIME AS "begintime", ENDTIME AS "endtime", ALLCOUNT AS "allcount", SUCCOUNT AS "succount", DETAIL AS "detail"
+    </sql>
+
+</mapper>

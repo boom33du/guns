@@ -1,0 +1,63 @@
+@layout("/common/_container.html",{bg:"bg-white",js:["/assets/modular/busi/monthlyStatementRecord/monthlyStatementRecord_edit.js"]}){
+<form id="monthlyStatementRecordForm" lay-filter="monthlyStatementRecordForm" class="layui-form model-form">
+    <input name="id" type="hidden"/>
+    <div class="layui-form-item">
+        <label class="layui-form-label">年份<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="year" name="year" placeholder="请输入年份" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">月份<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="month" name="month" placeholder="请输入月份" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">月结时间<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="recordtime" name="recordtime" placeholder="请输入月结时间" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">操作人<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="operid" name="operid" placeholder="请输入操作人，用户表主键，外键" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">开始时间<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="begintime" name="begintime" placeholder="请输入开始时间" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">结束时间<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="endtime" name="endtime" placeholder="请输入结束时间" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">月结用户数<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="allcount" name="allcount" placeholder="请输入月结用户数" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">月结成功用户数<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="succount" name="succount" placeholder="请输入月结成功用户数" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">月结记录<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="detail" name="detail" placeholder="请输入月结记录，记录异常情况" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item text-right">
+        <button class="layui-btn layui-btn-primary" type="button" ew-event="closeDialog">取消</button>
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>保存</button>
+    </div>
+</form>
+@}
