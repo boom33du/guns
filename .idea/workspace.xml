@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="55d24379-601f-4029-bc97-370181a9ba2c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/42da25d8-8955-4697-b8ad-b353113e38a4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/42da25d8-8955-4697-b8ad-b353113e38a4/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/guns.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="guns@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="guns@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="guns@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="guns: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\stylefeng_guns\repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.6.2" />
+        <option name="userSettingsFile" value="E:\stylefeng_guns\apache-maven-3.6.2\conf\settings1.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="local" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="1Rk5CdrMPvTEL4oN2TnjIX6yCsr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="cn.stylefeng.guns.modular.model.mapper" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\stylefeng_guns\workspace\guns\src\main\java\cn\stylefeng\guns\modular\rec\model\params" />
+      <recent name="E:\stylefeng_guns\workspace\guns\src\main\webapp\assets\modular\wtmm" />
+      <recent name="E:\stylefeng_guns\workspace\guns\src\main\webapp\pages\modular\wtmm" />
+      <recent name="E:\stylefeng_guns\workspace\guns\src\main\java" />
+      <recent name="E:\stylefeng_guns\workspace\guns\src\main\java\cn\stylefeng\guns" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\stylefeng_guns\workspace\guns\src\main\webapp\pages\modular\msg" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn compile" />
+      <command value="clean package -Dmaven.test.skip=true" />
+      <command value="mvn clean package -Dmaven.test.skip=true" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.GunsApplication">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.stylefeng.guns.modular.Test" />
+      <module name="guns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.stylefeng.guns.modular.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TypeOfWatermeterController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.stylefeng.guns.modular.wtmm.controller.TypeOfWatermeterController" />
+      <module name="guns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.stylefeng.guns.modular.wtmm.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in guns" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="guns" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="assets.modular.wtmm.watermeterinfo in guns" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="guns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assets.modular.wtmm.watermeterinfo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assets.modular.wtmm.watermeterinfo" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GunsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="guns" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.stylefeng.guns.GunsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.TypeOfWatermeterController" />
+      <item itemvalue="JUnit.All in guns" />
+      <item itemvalue="JUnit.assets.modular.wtmm.watermeterinfo in guns" />
+      <item itemvalue="Spring Boot.GunsApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.assets.modular.wtmm.watermeterinfo in guns" />
+        <item itemvalue="Application.TypeOfWatermeterController" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="JUnit.All in guns" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="55d24379-601f-4029-bc97-370181a9ba2c" name="Default Changelist" comment="" />
+      <created>1570198126635</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570198126635</updated>
+      <workItem from="1570198136481" duration="2938000" />
+      <workItem from="1570202650131" duration="2847000" />
+      <workItem from="1570207862559" duration="958000" />
+      <workItem from="1570208887755" duration="2815000" />
+      <workItem from="1570244148853" duration="4835000" />
+      <workItem from="1570357411022" duration="109000" />
+      <workItem from="1570359514376" duration="534000" />
+      <workItem from="1570360197803" duration="1020000" />
+      <workItem from="1570361694338" duration="1093000" />
+      <workItem from="1571736627661" duration="739000" />
+      <workItem from="1574337715665" duration="1584000" />
+      <workItem from="1574931985498" duration="968000" />
+      <workItem from="1574934425794" duration="1530000" />
+      <workItem from="1575963334957" duration="163000" />
+      <workItem from="1576044615992" duration="2078000" />
+      <workItem from="1576056329368" duration="6574000" />
+      <workItem from="1576231218577" duration="10403000" />
+      <workItem from="1576282201606" duration="4040000" />
+      <workItem from="1576286376182" duration="880000" />
+      <workItem from="1576287315929" duration="1496000" />
+      <workItem from="1576289437929" duration="3478000" />
+      <workItem from="1576300462074" duration="8651000" />
+      <workItem from="1576384076405" duration="167000" />
+      <workItem from="1576393928037" duration="23000" />
+      <workItem from="1576637535557" duration="13736000" />
+      <workItem from="1578756563262" duration="2896000" />
+      <workItem from="1578800479938" duration="5334000" />
+      <workItem from="1578806043002" duration="14079000" />
+      <workItem from="1578887293005" duration="606000" />
+      <workItem from="1578887958145" duration="1930000" />
+      <workItem from="1579328302449" duration="326000" />
+      <workItem from="1580093753312" duration="671000" />
+      <workItem from="1581077705471" duration="57000" />
+      <workItem from="1584492308973" duration="6175000" />
+    </task>
+    <task id="LOCAL-00001" summary="智能水表">
+      <created>1584499522629</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584499522629</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="智能水表" />
+    <option name="LAST_COMMIT_MESSAGE" value="智能水表" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="106" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578807858976">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="361" y="106" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1536.834@0.30.1536.834" timestamp="1578807858976" />
+    <state x="572" y="138" key="#com.intellij.ide.util.MemberChooser" timestamp="1578823393171">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="572" y="138" key="#com.intellij.ide.util.MemberChooser/0.30.1536.834@0.30.1536.834" timestamp="1578823393171" />
+    <state x="372" y="28" key="CommitChangelistDialog2" timestamp="1584499501089">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="372" y="28" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1584499501089" />
+    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1584500552118">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1584500552118" />
+    <state x="644" y="323" width="272" height="287" key="Github.ShareDialog" timestamp="1584500584228">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="644" y="323" width="272" height="287" key="Github.ShareDialog/0.0.1536.864@0.0.1536.864" timestamp="1584500584228" />
+    <state width="1493" height="120" key="GridCell.Tab.0.bottom" timestamp="1584497070394">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="120" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1584497070394" />
+    <state width="1478" height="247" key="GridCell.Tab.0.bottom/0.30.1536.834@0.30.1536.834" timestamp="1578889910779" />
+    <state width="1493" height="120" key="GridCell.Tab.0.center" timestamp="1584497070394">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="120" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1584497070394" />
+    <state width="1478" height="247" key="GridCell.Tab.0.center/0.30.1536.834@0.30.1536.834" timestamp="1578889910779" />
+    <state width="1493" height="120" key="GridCell.Tab.0.left" timestamp="1584497070394">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="120" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1584497070394" />
+    <state width="1478" height="247" key="GridCell.Tab.0.left/0.30.1536.834@0.30.1536.834" timestamp="1578889910779" />
+    <state width="1493" height="120" key="GridCell.Tab.0.right" timestamp="1584497070394">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="120" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1584497070394" />
+    <state width="1478" height="247" key="GridCell.Tab.0.right/0.30.1536.834@0.30.1536.834" timestamp="1578889910779" />
+    <state width="1493" height="120" key="GridCell.Tab.1.bottom" timestamp="1584497070394">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="120" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1584497070394" />
+    <state width="1478" height="247" key="GridCell.Tab.1.bottom/0.30.1536.834@0.30.1536.834" timestamp="1578889910779" />
+    <state width="1493" height="120" key="GridCell.Tab.1.center" timestamp="1584497070394">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="120" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1584497070394" />
+    <state width="1478" height="247" key="GridCell.Tab.1.center/0.30.1536.834@0.30.1536.834" timestamp="1578889910779" />
+    <state width="1493" height="120" key="GridCell.Tab.1.left" timestamp="1584497070394">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="120" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1584497070394" />
+    <state width="1478" height="247" key="GridCell.Tab.1.left/0.30.1536.834@0.30.1536.834" timestamp="1578889910779" />
+    <state width="1493" height="120" key="GridCell.Tab.1.right" timestamp="1584497070394">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="120" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1584497070394" />
+    <state width="1478" height="247" key="GridCell.Tab.1.right/0.30.1536.834@0.30.1536.834" timestamp="1578889910779" />
+    <state width="1478" height="247" key="GridCell.Tab.2.bottom" timestamp="1578889910779">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state width="1478" height="247" key="GridCell.Tab.2.bottom/0.30.1536.834@0.30.1536.834" timestamp="1578889910779" />
+    <state width="1478" height="247" key="GridCell.Tab.2.center" timestamp="1578889910779">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state width="1478" height="247" key="GridCell.Tab.2.center/0.30.1536.834@0.30.1536.834" timestamp="1578889910779" />
+    <state width="1478" height="247" key="GridCell.Tab.2.left" timestamp="1578889910779">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state width="1478" height="247" key="GridCell.Tab.2.left/0.30.1536.834@0.30.1536.834" timestamp="1578889910779" />
+    <state width="1478" height="247" key="GridCell.Tab.2.right" timestamp="1578889910779">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state width="1478" height="247" key="GridCell.Tab.2.right/0.30.1536.834@0.30.1536.834" timestamp="1578889910779" />
+    <state x="330" y="84" key="SettingsEditor" timestamp="1578887971157">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="330" y="84" key="SettingsEditor/0.30.1536.834@0.30.1536.834" timestamp="1578887971157" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1584500662384">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1584500662384" />
+    <state x="595" y="166" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1584496677349">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="595" y="166" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1536.864@0.0.1536.864" timestamp="1584496677349" />
+  </component>
+</project>
